@@ -1,4 +1,4 @@
-import { IReactHTML } from "../interfaces/reactHtml";
+import { IReactHTML } from "../interfaces/ReactHtml";
 
 interface ICardProps extends IReactHTML {}
 

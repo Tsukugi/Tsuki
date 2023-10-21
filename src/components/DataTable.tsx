@@ -1,4 +1,4 @@
-import { IReactHTML } from "../interfaces/reactHtml";
+import { IReactHTML } from "../interfaces/ReactHtml";
 import Card from "./Card";
 
 interface IDataTableProps extends IReactHTML {}

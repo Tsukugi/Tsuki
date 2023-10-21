@@ -1,4 +1,4 @@
 export interface IReactHTML {
-    children?: JSX.Element | JSX.Element[];
+    children?: JSX.Element | JSX.Element[] | string;
     className?: string;
 }

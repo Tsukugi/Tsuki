@@ -3,8 +3,8 @@ import Sidebar from "../components/Sidebar";
 
 const Dashboard = () => {
     return (
-        <div className="flex h-screen w-screen bg-gray-100">
-            <Sidebar />
+        <div className="flex bg-gray-100">
+            <Sidebar entries={["Dashboard", "Tsuki"]} />
             <Content />
         </div>
     );

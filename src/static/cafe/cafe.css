@@ -1,30 +1,30 @@
-body {
+.cafeContainer {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
     padding: 20px;
 }
 
-h1 {
+.cafeContainer h1 {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
 }
 
-h2 {
+.cafeContainer h2 {
     font-size: 30px;
 }
 
-.established {
+.cafeContainer .established {
     font-style: italic;
 }
 
-h1,
-h2,
-p {
+.cafeContainer h1,
+.cafeContainer h2,
+.cafeContainer p {
     text-align: center;
 }
 
-.menu {
+.cafeContainer .menu {
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
@@ -33,68 +33,60 @@ p {
     max-width: 500px;
 }
 
-img {
+.cafeContainer img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -25px;
 }
 
-hr {
+.cafeContainer hr {
     height: 2px;
     background-color: brown;
     border-color: brown;
 }
 
-.bottom-line {
+.cafeContainer .bottom-line {
     margin-top: 25px;
 }
 
-h1,
-h2 {
+.cafeContainer h1,
+.cafeContainer h2 {
     font-family: Impact, serif;
 }
 
-.item p {
-    display: inline-block;
+.cafeContainer .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cafeContainer .item p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px;
 }
 
-.flavor,
-.dessert {
-    text-align: left;
-    width: 75%;
-}
-
-.price {
-    text-align: right;
-    width: 25%;
-}
-
 /* FOOTER */
 
-footer {
+.cafeContainer footer {
     font-size: 14px;
 }
 
-.address {
+.cafeContainer .address {
     margin-bottom: 5px;
 }
 
-a {
+.cafeContainer a {
     color: black;
 }
 
-a:visited {
+.cafeContainer a:visited {
     color: black;
 }
 
-a:hover {
+.cafeContainer a:hover {
     color: brown;
 }
 
-a:active {
+.cafeContainer a:active {
     color: brown;
 }

@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
 import "./App.css";
 
 import Dashboard from "./views/Dashboard";
 import Showcase from "./views/Showcase";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
     return (
         <div className="flex bg-gray-100">
-            <Sidebar entries={["Dashboard", "Tsuki"]} />
             <Router>
+                <Sidebar entries={["Dashboard", "Tsuki"]} />
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/dashboard" element={<Dashboard />} />

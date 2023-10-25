@@ -1,7 +1,7 @@
+import { HTMLProps } from "react";
 import { Link } from "react-router-dom";
-import { IReactHTML } from "../interfaces/ReactHtml";
 
-interface ISidebarProps extends IReactHTML {
+interface ISidebarProps extends HTMLProps<HTMLDivElement> {
     title?: string;
     entryRenderer?: TEntryRenderer;
     entries: string[];

@@ -1,9 +1,9 @@
-import { IReactHTML } from "../interfaces/ReactHtml";
+import { HTMLProps } from "react";
 import Card from "./Card";
 
-interface IDataTableProps extends IReactHTML {}
+interface IDataTableProps extends HTMLProps<HTMLDivElement> {}
 
-const DataTable = (props: IDataTableProps) => {
+const DataTable: React.FC<IDataTableProps> = (props) => {
     const { className } = props;
     return (
         <Card className={className}>

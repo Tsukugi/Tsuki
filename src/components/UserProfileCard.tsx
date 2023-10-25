@@ -1,9 +1,9 @@
-import { IReactHTML } from "../interfaces/ReactHtml";
+import { HTMLProps } from "react";
 import Card from "./Card";
 
-interface IUserProfileCardProps extends IReactHTML {}
+interface IUserProfileCardProps extends HTMLProps<HTMLDivElement> {}
 
-const UserProfileCard = (props: IUserProfileCardProps) => {
+const UserProfileCard: React.FC<IUserProfileCardProps> = (props) => {
     const { className } = props;
     return (
         <Card className={className}>

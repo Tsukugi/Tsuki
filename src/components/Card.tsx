@@ -1,11 +1,14 @@
-import { IReactHTML } from "../interfaces/ReactHtml";
+import React, { ReactNode, HTMLProps } from "react";
 
-interface ICardProps extends IReactHTML {}
-
-const Card = (props: ICardProps) => {
-    const { children, className } = props;
+interface ICardProps extends HTMLProps<HTMLDivElement> {
+    children: ReactNode;
+}
+const Card: React.FC<ICardProps> = ({ children, ...props }) => {
     return (
-        <div className={`bg-white p-6 rounded shadow ${className}`}>
+        <div
+            {...props}
+            className={`bg-white p-6 rounded shadow m-1 ${props.className}`}
+        >
             {children}
         </div>
     );
